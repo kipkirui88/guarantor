@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+  {% include 'navbar.html' %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background:#1b2f45;">
+      <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>Services</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Services</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs --> <br><br>
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Services</h2>
+          </div>
+
+        <div class="row">
+          <div class="col-md-4 d-flex" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/blog-1.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Guarantor Protection</a></h5>
+                <p class="card-text">Cover yourself against a loan you have guarateed a member.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/blog-4.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Capital & Shares</a></h5>
+                <p class="card-text">Sell or buy shares/deposits for sacco.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/blog-3.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Exit plan and Payment</a></h5>
+                <p class="card-text">Sell your share capital on exit.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <h3>Free</h3>
+              <h4><sup>KSh</sup>200<span> / month</span></h4>
+              <ul>
+                <li>Services 1</li>
+                <li>Services 2</li>
+                <li class="na">Services 3</li>
+                <li class="na">Services 4</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" style="color: black;font-weight: bold;">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Renewable</h3>
+              <h4><sup>KSh</sup>500<span> / month</span></h4>
+              <ul>
+                <li>Services 1</li>
+                <li>Services 2</li>
+                <li>Services 3</li>
+                <li class="na">Services 4</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>Premium</h3>
+              <h4><sup>KSh</sup>800<span> / month</span></h4>
+              <ul>
+                <li>Services 1</li>
+                <li>Services 2</li>
+                <li>Services 3</li>
+                <li>Services 4</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->     
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/logo.png' %}" class="testimonial-img" alt="">
+                  <h3>David Sam</h3>
+                  <h4>Stima Sacco </h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/' %}" class="testimonial-img" alt="">
+                  <h3>Koech Caleb</h3>
+                  <h4>Nyati Sacco</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/' %}" class="testimonial-img" alt="">
+                  <h3>John Carson</h3>
+                  <h4>Imara Sacco</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+    {% include 'footer.html' %}
+    {% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+  {% include 'navbar.html' %}
+
+  <main id="main">
+
+    <section class="section">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+              <div class="card card-primary">
+                <div class="card-header bg-success" style="text-align:center;color: black;">
+                  <h4>Please Pay Deposit</h4>
+                </div>
+                <div class="card-body">
+                    <li><b>Please enter your phone number you are paying deposit with.</b></li>
+                    <li><b>Amount to be payed is Ksh 200 only.</b></li><br>
+                  <form method="POST" action="#" class="needs-validation" novalidate="">
+                   {% csrf_token %}
+                    <div class="form-group">
+                      <label for="phone_number">Phone Number</label>
+                      <input id="phone_number" type="number" class="form-control" name="phone_number" placeholder=" Please start with 254" tabindex="1" required >
+                    </div>
+                    <div class="form-group">
+                      <div class="d-block">
+                        <label for="amount" class="control-label">Amount</label>
+                      </div>
+                      <input id="amount" type="number" class="form-control" name="amount" tabindex="2" required>
+                    </div><br>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-success btn-block" tabindex="4">
+                        Pay Now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- <div class="mt-5 text-muted text-center">
+                Don't have an account? <a href="{% url 'register' %}">Create One</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+  </main><!-- End #main -->
+  {% include 'footer.html' %}
+  {% endblock %}

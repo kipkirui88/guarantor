@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center"><img class="logo" src="{% static 'img/logo.png' %}" alt="">
+      <h1 class="logo me-auto"><a href="/">G<span>&</span>G</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          {% if request.user.is_authenticated %}
+          <li><a class="nav-link scrollto active"><strong>Hello,</strong> {{ user.first_name}} {{ user.last_name }}</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'logout' %}">LogOut</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      {% else %}
+     
+      {% endif %}
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+
+    <section class="section">
+        <div class="section-body">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card">
+                <div class="card-header">
+                  <h4>My Account Deposit</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped" id="table-1">
+                      <thead>
+                        <tr>
+                          <th class="text-center">#</th>
+                          <th>Phone Number</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        {% for users in users %}
+                      <tr>
+                        <td>{{ users.id }}</td>
+                        <td>{{ users.mobile }}</td>
+                        <td>{{ users.amount }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main><!-- End #main -->
+  {% endblock %}

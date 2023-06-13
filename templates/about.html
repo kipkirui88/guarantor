@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+  {% include 'navbar.html' %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center section-bg" style="background:#1b2f45;">
+      <div class="container position-relative d-flex flex-column align-items-center">
+        <h2>About Us</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>About</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Tabs Section ======= -->
+    <section id="tabs" class="tabs">
+      <div class="container" data-aos="fade-up">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                <h3>The story behind GUARANTOR'S GUARD.</h3>
+                <p>
+                  Sacco Members get access to loans through guarantors consent on application.
+                </p>
+                <p>In the unfortunate events, if the borrower fails to pay and the loan is not performing, the guarantors carry liability that is not in their budget. Either loosing their sacco deposit or failing their financial goal.</p>
+                <p>
+                 
+                  <strong>G&G's</strong> goal is to make sure guarantors don't suffer liability to a loan they have not borrowed..</p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'img/logo.png' %}" alt="" class="img-fluid" style="height: 50vh;border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Tabs Section -->
+   
+   <!-- ======= Team Section ======= -->
+   <section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Team</h2>
+       </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Name</h4>
+              <span>Chief Executive Officer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Name</h4>
+              <span>Product Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Name</h4>
+              <span>CTO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Name</h4>
+              <span>Accountant</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->    
+
+  </main><!-- End #main -->
+  {% include 'footer.html' %}
+  {% endblock %}

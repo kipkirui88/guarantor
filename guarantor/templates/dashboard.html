@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+  {% include 'navbar.html' %}
+
+  <main id="main">
+
+    <section class="section">
+        <div class="section-body">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>My Account Deposit</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped" id="table-1">
+                      <thead>
+                        <tr>
+                          <th class="text-center">#</th>
+                          <th>Phone Number</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        {% for payments in payments %}
+                      <tr>
+                        <td>{{ payments.id }}</td>
+                        <td>{{ payments.phone_number }}</td>
+                        <td>{{ payments.amount }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main><!-- End #main -->
+  {% endblock %}
